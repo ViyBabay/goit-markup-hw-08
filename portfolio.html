@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potrfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container container">
+            <nav class="navigation">
+                <a href="./index.html" class="logo"><span class="logo__web">Web</span><span
+                        class="logo__studio">Studio</span></a>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link">Студія</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html"
+                            class="navigation__link active">Портфоліо</a></li>
+                    <li class="navigation__item"><a href="/contacts" class="navigation__link">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts">
+                <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__item--style"><svg
+                            class="contacts__item--icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contacts__item"><a href="tel:+380961111111" class="contacts__item--style"><svg
+                            class="contacts__item--icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!--Filters-->
+        <section class="section">
+            <div class="container">
+                <h1 class="visually-hidden">Наші роботи</h1>
+                <ul class="buttons-list">
+                    <li class="buttons-item"><button class="buttons" type="button">Усі</button></li>
+                    <li class="buttons-item"><button class="buttons" type="button">Веб-сайти</button></li>
+                    <li class="buttons-item"><button class="buttons" type="button">Додатки</button></li>
+                    <li class="buttons-item"><button class="buttons" type="button">Дизайн</button></li>
+                    <li class="buttons-item"><button class="buttons" type="button">Маркетинг</button></li>
+                </ul>
+
+                <ul class="exp-list">
+                    <li class="exp-item">
+                        <div class="exp-card"><img class="exp-logo" src="images/technokryack.jpg"
+                                alt="Веб-сайт: Технокряк" width="370" />
+                            <div class="overlay">
+                                <p class="overlay-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                                    quam
+                                    aperiam animi quas cupiditate mollitia cum voluptas beatae sunt incidunt!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="exp-name">Технокряк</h2>
+                            <p class="exp-type">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="exp-item">
+                        <div class="exp-card"><img class="exp-logo" src="images/poster.jpg"
+                                alt="Дизайн: Постер New Orlean vs Golden Star" width="370" />
+                            <div class="overlay">
+                                <p class="overlay-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                                    dolores
+                                    laudantium corporis debitis ut quas quaerat libero dolor nulla hic.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="exp-name">Постер New Orlean vs Golden Star</h2>
+                            <p class="exp-type">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="exp-item">
+                        <div class="exp-card"><img class="exp-logo" src="images/seafood.jpg"
+                                alt="Додаток: Ресторан Seafood" width="370" />
+                            <div class="overlay">
+                                <p class="overlay-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+                                    sunt
+                                    cupiditate fugit harum repellat ut aliquam impedit minus sint aliquid.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="exp-name">Ресторан Seafood</h2>
+                            <p class="exp-type">Додаток</p>
+                        </div>
+                    </li>
+                    <li class="exp-item">
+                        <div class="exp-card"><img class="exp-logo" src="images/prime.jpg" alt="Маркетинг: Проєкт Prime"
+                                width="370" />
+                            <div class="overlay">
+                                <p class="overlay-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Delectus
+                                    incidunt debitis voluptas necessitatibus modi ullam deleniti assumenda non
+                                    laboriosam
+                                    doloremque?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="exp-name">Проєкт Prime</h2>
+                            <p class="exp-type">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="exp-item">
+                        <div class="exp-card">
+                            <img class="exp-logo" src="images/boxes.jpg" alt="Додаток: Проєкт Boxes" width="370" />
+                            <div class="overlay">
+                                <p class="overlay-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                                    quis,
+                                    nesciunt fugiat tenetur ullam corporis ad unde repudiandae amet veniam!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="exp-name">Проєкт Boxes</h2>
+                            <p class="exp-type">Додаток</p>
+                        </div>
+                    </li>
+                    <li class="exp-item">
+                        <div class="exp-card"><img class="exp-logo" src="images/inspiration.jpg"
+                                alt="Веб-сайт: Inspiration has no Borders" width="370" />
+                            <div class="overlay">
+                                <p class="overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+                                    ipsam
+                                    et tempora officia aliquam voluptate sint, illo accusantium nostrum doloremque?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="exp-name">Inspiration has no Borders</h2>
+                            <p class="exp-type">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="exp-item">
+                        <div class="exp-card"><img class="exp-logo" src="images/le.jpg"
+                                alt="Дизайн: Видання Limited Edition" width="370" />
+                            <div class="overlay">
+                                <p class="overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi a
+                                    earum aspernatur molestias illum quos id, adipisci asperiores quis ab.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="exp-name">Видання Limited Edition</h2>
+                            <p class="exp-type">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="exp-item">
+                        <div class="exp-card"><img class="exp-logo" src="images/lab.jpg" alt="Маркетинг: Проєкт LAB"
+                                width="370" />
+                            <div class="overlay">
+                                <p class="overlay-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repellendus,
+                                    culpa dolorem dolores dolor sit autem officiis. Quae quisquam saepe nobis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="exp-name">Проєкт LAB</h2>
+                            <p class="exp-type">Маркетинг</p>
+                        </div>
+
+                    </li>
+                    <li class="exp-item">
+                        <div class="exp-card"><img class="exp-logo" src="images/growingbusiness.jpg"
+                                alt="Додаток: Growing Business" width="370" />
+                            <div class="overlay">
+                                <p class="overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                    reiciendis impedit accusamus molestias, dolores expedita magni doloribus perferendis
+                                    ratione vero!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-txt">
+                            <h2 class="exp-name">Growing Business</h2>
+                            <p class="exp-type">Додаток</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="main-container container">
+            <div class="adress">
+                <a href="./index.html" class="logo"><span class="logo__web">Web</span><span
+                        class="logo__white">Studio</span></a>
+                <address>
+                    <ul class="adress__list">
+                        <li class="adress__item"><a class="adress__item--text"
+                                href="https://goo.gl/maps/3PGpG9PpnSt5168C9" target="_blank"
+                                rel="noopener noreferrer">м. Київ,
+                                пр-т Лесі Українки, 26</a></li>
+                        <li class="adress__item"><a class="adress__item--contact"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="adress__item"><a class="adress__item--contact" href="tel:+380961111111">+38 096 111
+                                11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-links">
+                <h4 class="join">Приєднуйтесь</h4>
+                <ul class="flinks-list">
+                    <li>
+                        <a class="footer-link" href="">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <h4 class="join">Підпишіться на розсилку</h4>
+                <div class="mail-btn">
+                    <form>
+                        <label>
+                            <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
+                        </label>
+                    </form>
+                    <button type="submit" class="btn-subscribe">Підписатись<svg class="icon-send" width="24"
+                            height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg></button>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>

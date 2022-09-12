@@ -1,0 +1,54 @@
+.hero {
+    background-color: var(--secondary-background-color);
+    padding: 200px 0px 200px 0px;
+    background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/background-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
+    color: var(--white-text-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero__button {
+    font-family: inherit;
+    & {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        border: none;
+        width: 216px;
+        height: 50px;
+        color: var(--white-text-color);
+        background-color: var(--accent-color);
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        transition-property: box-shadow;
+        transition-duration: var(--main-trans-duration);
+        transition-timing-function: var(--cubic);
+        }
+        &:hover {
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            }
+}
