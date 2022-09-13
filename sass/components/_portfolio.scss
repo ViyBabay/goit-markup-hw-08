@@ -1,9 +1,11 @@
 .buttons-list {
-    display: inline-block ;
-    // justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
 }
 
 .buttons-item {
+    margin-bottom: 15px;
     margin-right: 8px;
     &:last-child {
         margin-right: 0;
@@ -40,7 +42,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .exp-name {
