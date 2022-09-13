@@ -1,3 +1,9 @@
+.job {
+@media screen and(max-width: $desktop) {
+        display: none;
+    }
+}
+
 .job__title {
     margin-bottom: 50px;
     font-style: normal;
