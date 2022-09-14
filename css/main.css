@@ -700,6 +700,11 @@ body {
     justify-content: space-around;
   }
 }
+@media screen and (min-width: 1198.98px) {
+  .main-container {
+    align-items: baseline;
+  }
+}
 
 .adress {
   margin-bottom: 60px;
@@ -792,6 +797,13 @@ body {
   padding-left: 16px;
   color: var(--white-text-color);
   background-color: var(--secondary-background-color);
+}
+
+@media screen and (min-width: 1198.98px) {
+  .mail-btn {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .btn-subscribe {
