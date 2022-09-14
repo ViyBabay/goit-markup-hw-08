@@ -1058,6 +1058,11 @@ body {
   width: 370px;
   padding: 12px 16px;
 }
+@media screen and (min-width: 1198.98px) {
+  .modal-txtarea {
+    width: 448px;
+  }
+}
 
 .modal-input {
   padding: 11px 12px;
