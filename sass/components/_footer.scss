@@ -8,13 +8,23 @@
     background-color: var(--secondary-background-color);
 }
 
-// .main-container {
-//     // display: flex;
-//     // align-items: baseline;
-// }
+.main-container {
+    @media screen and(min-width:$tablet){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: center;
+    }
+}
 
 .adress {
     margin-bottom: 60px;
+    @media screen and(min-width:$tablet){
+        margin-right: 165px;
+        margin-bottom: 60px;
+        margin-left: 76px;
+        
+    }
 }
 
 .adress__item {
@@ -107,12 +117,17 @@
             color: var(--white-text-color);
             background-color: var(--secondary-background-color);
         }
+        // @media screen and (min-width: 1200px){
+        //     display: flex;
+            
+        // }
 }
 
-// .mail-btn {
-    
-//     // display: flex;
-// }
+.mail-btn {
+    // @media screen and (min-width: 1200px){
+    //     display: flex;
+    // }
+}
 
 .btn-subscribe {
     margin-top: 20px;
@@ -132,6 +147,10 @@
     padding: 10px 28px;
     // margin-left: 12px;
     cursor: pointer;
+    @media screen and (min-width: 1200px){
+        display: flex;
+        
+    }
 }
 
 .icon-send {

@@ -26,6 +26,11 @@
     background-color: var(--nav-background-color);
     transition: var(--main-trans-duration) var(--cubic);
     border-radius: 4px;
+    @media screen and (min-width: 1200px){
+        width: 528px;
+        height: 581px;
+        
+    }
 }
 
 .backdrop.is-hidden .modal {

@@ -1,7 +1,9 @@
 .team {
     background-color: var(--third-background-color);
-    @media screen and(max-width: $tablet) {
-        padding-bottom: 60px;
+    padding-bottom: 60px;
+    @media screen and(min-width: $desktop) {
+        padding-bottom: 94px;
+        
     }
 }
 
@@ -10,13 +12,15 @@
     margin-bottom: 30px;
     font-style: normal;
     font-weight: 700;
-    
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    @media screen and(max-width: $tablet) {
-        font-size: 28px;
-        line-height: 1.18;    ;
-        }
+    @media screen and (min-width: 1200px){
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .team__list {
@@ -27,17 +31,20 @@
 }
 
 .team__item {
-    margin-top: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--nav-background-color);
-    // &:last-child {
-    //     margin-right: 0;
-    //     }
+    @media screen and (min-width: 768px){
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 270px;
+    }
 }
 
 .name__info {
     padding-top: 30px;
+    padding-bottom: 24px;
 }
 
 .name__info--name {
@@ -63,7 +70,7 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
-    margin: 16px 0px 30px 0px;
+    margin-top: 16px;
     // padding-bottom: 24px;
 }
 

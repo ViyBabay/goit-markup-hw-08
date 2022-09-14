@@ -2,11 +2,21 @@
     max-width: 100%;
     height: 400px;
     padding: 118px 60px;
-    background-image: url("/images/hero-mob-x1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-mob-x1.jpg");
     @media screen and(min-width: 481px){
-        background-image: url("/images/hero-tablet-x1.jpg")
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-tablet-x1.jpg")
     }
-    
+    @media screen and(min-width: 769px){
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero-desk-x1.jpg")
+    }
+    @media screen and(min-width: 1200px) {
+        padding: 200px 0;
+        height: 600px;
+        
+    }
     }
     
 
@@ -23,8 +33,11 @@
     text-transform: uppercase;
     font-size: 26px;
     line-height: 1.62;
+    max-width: 360px;
+    @media screen and (min-width: 1200px) {
+        width: 696px;
     }
-
+    }
 
 .hero__button {
     font-family: inherit;

@@ -20,15 +20,59 @@
 <body>
     <header class="header">
         <div class="header__container container">
-            <a href="./index.html" class="logo"><span class="logo__web">Web</span><span
-                    class="logo__studio">Studio</span></a>
+            <div class="mobile-wrap">
+                <a href="./index.html" class="logo"><span class="logo__web">Web</span><span
+                        class="logo__studio">Studio</span></a>
+                <button class="open_menu js-open-menu" type="button"><svg class="open-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
+                <div class="header__mobile js-menu-container">
+                    <!-- <a href="./index.html" class="logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a> -->
+                    <div class="header_overlay">
+                        <button class="close_menu js-close-menu" type=button>
+                            <svg class="close-icon" width="40" height="40">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <nav class="mob-nav">
+                            <ul class="mob-nav__list">
+                                <li class="mob-nav__item"><a href="./index.html" class="mob-nav__link">Студія</a>
+                                </li>
+                                <li class="mob-nav__item"><a href="./portfolio.html"
+                                        class="mob-nav__link active">Портфоліо</a>
+                                </li>
+                                <li class="mob-nav__item"><a href="/contacts" class="mob-nav__link">Контакти</a></li>
+                            </ul>
+                        </nav>
+                        <ul class="mob-contacts">
+
+                            </li>
+                            <li class="mob-contacts__item"><a href="tel:+380961111111"
+                                    class="mob-contacts__item--tel">+38
+                                    096 111 11 11</a>
+                            </li>
+                            <li class="mob-contacts__item"><a href="mailto:info@devstudio.com"
+                                    class="mob-contacts__item--mail">info@devstudio.com</a>
+                        </ul>
+                        <ul class="mobile_soc-links">
+                            <li class=""><a class="mobile_soc-link" href="">Instagram</a></li>
+                            <li class=""><a class="mobile_soc-link" href="">Twitter</a></li>
+                            <li class=""><a class="mobile_soc-link" href="">Facebook</a></li>
+                            <li class=""><a class="mobile_soc-link" href="">LinkedIn</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
             <div class="header-desktop">
+                <a href="./index.html" class="logo"><span class="logo__web">Web</span><span
+                        class="logo__studio">Studio</span></a>
                 <nav class="navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="./index.html" class="navigation__link">Студія</a>
+                        <li class="navigation__item"><a href="./index.html" class="navigation__link active">Студія</a>
                         </li>
-                        <li class="navigation__item"><a href="./portfolio.html"
-                                class="navigation__link active">Портфоліо</a>
+                        <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a>
                         </li>
                         <li class="navigation__item"><a href="/contacts" class="navigation__link">Контакти</a></li>
                     </ul>
@@ -46,45 +90,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="header__mobile js-menu-container">
-                <!-- <a href="./index.html" class="logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a> -->
-                <div class="header_overlay">
-                    <button class="close_menu js-close-menu" type=button>
-                        <svg class="close-icon" width="40" height="40">
-                            <use href="./images/icons.svg#icon-close"></use>
-                        </svg>
-                    </button>
-                    <nav class="mob-nav">
-                        <ul class="mob-nav__list">
-                            <li class="mob-nav__item"><a href="./index.html" class="mob-nav__link active">Студія</a>
-                            </li>
-                            <li class="mob-nav__item"><a href="./portfolio.html" class="mob-nav__link">Портфоліо</a>
-                            </li>
-                            <li class="mob-nav__item"><a href="/contacts" class="mob-nav__link">Контакти</a></li>
-                        </ul>
-                    </nav>
-                    <ul class="mob-contacts">
 
-                        </li>
-                        <li class="mob-contacts__item"><a href="tel:+380961111111" class="mob-contacts__item--tel">+38
-                                096 111 11 11</a>
-                        </li>
-                        <li class="mob-contacts__item"><a href="mailto:info@devstudio.com"
-                                class="mob-contacts__item--mail">info@devstudio.com</a>
-                    </ul>
-                    <ul class="mobile_soc-links">
-                        <li class=""><a class="mobile_soc-link" href="">Instagram</a></li>
-                        <li class=""><a class="mobile_soc-link" href="">Twitter</a></li>
-                        <li class=""><a class="mobile_soc-link" href="">Facebook</a></li>
-                        <li class=""><a class="mobile_soc-link" href="">LinkedIn</a></li>
-                    </ul>
 
-                </div>
-            </div>
-            <button class="open_menu js-open-menu" type="button"><svg class="open-icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-menu_24px"></use>
-                </svg>
-            </button>
         </div>
 
     </header>
@@ -104,8 +111,19 @@
 
                 <ul class="exp-list">
                     <li class="exp-item">
-                        <div class="exp-card"><img class="exp-logo" src="images/technokryack.jpg"
-                                alt="Веб-сайт: Технокряк" width="370" />
+                        <div class="exp-card">
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/mob-port-1-x1.jpg 1x,
+                                ./images/portfolio/mob-port-1-x2.jpg 2x" media="(min-width: 320px)" />
+                                <source srcset="
+                                ./images/portfolio/tab-port-1-x1.jpg 1x,
+                                ./images/portfolio/tab-port-1-x2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/portfolio/desk-port-1-x1.jpg 1x,
+                                ./images/portfolio/desk-port-1-x2.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/portfolio/mob-port-1-x1.jpg" alt="Веб-сайт: Технокряк" />
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
                                     quam
@@ -119,8 +137,20 @@
                         </div>
                     </li>
                     <li class="exp-item">
-                        <div class="exp-card"><img class="exp-logo" src="images/poster.jpg"
-                                alt="Дизайн: Постер New Orlean vs Golden Star" width="370" />
+                        <div class="exp-card">
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/mob-port-2-x1.jpg 1x,
+                                ./images/portfolio/mob-port-2-x2.jpg 2x" media="(min-width: 320px)" />
+                                <source srcset="
+                                ./images/portfolio/tab-port-2-x1.jpg 1x,
+                                ./images/portfolio/tab-port-2-x2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/portfolio/desk-port-2-x1.jpg 1x,
+                                ./images/portfolio/desk-port-2-x2.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/portfolio/mob-port-2-x1.jpg"
+                                    alt="Дизайн: Постер New Orlean vs Golden Star" />
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
                                     dolores
@@ -134,8 +164,19 @@
                         </div>
                     </li>
                     <li class="exp-item">
-                        <div class="exp-card"><img class="exp-logo" src="images/seafood.jpg"
-                                alt="Додаток: Ресторан Seafood" width="370" />
+                        <div class="exp-card">
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/mob-port-3-x1.jpg 1x,
+                                ./images/portfolio/mob-port-3-x2.jpg 2x" media="(min-width: 320px)" />
+                                <source srcset="
+                                ./images/portfolio/tab-port-3-x1.jpg 1x,
+                                ./images/portfolio/tab-port-3-x2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/portfolio/desk-port-3-x1.jpg 1x,
+                                ./images/portfolio/desk-port-3-x2.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/portfolio/mob-port-3-x1.jpg" alt="Додаток: Ресторан Seafood" />
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
                                     sunt
@@ -149,8 +190,19 @@
                         </div>
                     </li>
                     <li class="exp-item">
-                        <div class="exp-card"><img class="exp-logo" src="images/prime.jpg" alt="Маркетинг: Проєкт Prime"
-                                width="370" />
+                        <div class="exp-card">
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/mob-port-4-x1.jpg 1x,
+                                ./images/portfolio/mob-port-4-x2.jpg 2x" media="(min-width: 320px)" />
+                                <source srcset="
+                                ./images/portfolio/tab-port-4-x1.jpg 1x,
+                                ./images/portfolio/tab-port-4-x2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/portfolio/desk-port-4-x1.jpg 1x,
+                                ./images/portfolio/desk-port-4-x2.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/portfolio/mob-port-4-x1.jpg" alt="Маркетинг: Проєкт Prime" />
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Delectus
@@ -167,7 +219,18 @@
                     </li>
                     <li class="exp-item">
                         <div class="exp-card">
-                            <img class="exp-logo" src="images/boxes.jpg" alt="Додаток: Проєкт Boxes" width="370" />
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/mob-port-5-x1.jpg 1x,
+                                ./images/portfolio/mob-port-5-x2.jpg 2x" media="(min-width: 320px)" />
+                                <source srcset="
+                                ./images/portfolio/tab-port-5-x1.jpg 1x,
+                                ./images/portfolio/tab-port-5-x2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/portfolio/desk-port-5-x1.jpg 1x,
+                                ./images/portfolio/desk-port-5-x2.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/portfolio/mob-port-5-x1.jpg" alt="Додаток: Проєкт Boxes" />
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
                                     quis,
@@ -181,8 +244,20 @@
                         </div>
                     </li>
                     <li class="exp-item">
-                        <div class="exp-card"><img class="exp-logo" src="images/inspiration.jpg"
-                                alt="Веб-сайт: Inspiration has no Borders" width="370" />
+                        <div class="exp-card">
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/mob-port-6-x1.jpg 1x,
+                                ./images/portfolio/mob-port-6-x2.jpg 2x" media="(min-width: 320px)" />
+                                <source srcset="
+                                ./images/portfolio/tab-port-6-x1.jpg 1x,
+                                ./images/portfolio/tab-port-6-x2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/portfolio/desk-port-6-x1.jpg 1x,
+                                ./images/portfolio/desk-port-6-x2.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/portfolio/mob-port-6-x1.jpg"
+                                    alt="Веб-сайт: Inspiration has no Borders" />
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
                                     ipsam
@@ -196,8 +271,19 @@
                         </div>
                     </li>
                     <li class="exp-item">
-                        <div class="exp-card"><img class="exp-logo" src="images/le.jpg"
-                                alt="Дизайн: Видання Limited Edition" width="370" />
+                        <div class="exp-card">
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/mob-port-7-x1.jpg 1x,
+                                ./images/portfolio/mob-port-7-x2.jpg 2x" media="(min-width: 320px)" />
+                                <source srcset="
+                                ./images/portfolio/tab-port-7-x1.jpg 1x,
+                                ./images/portfolio/tab-port-7-x2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/portfolio/desk-port-7-x1.jpg 1x,
+                                ./images/portfolio/desk-port-7-x1.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/portfolio/mob-port-7-x1.jpg" alt="Дизайн: Видання Limited Edition" />
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi a
                                     earum aspernatur molestias illum quos id, adipisci asperiores quis ab.
@@ -210,8 +296,19 @@
                         </div>
                     </li>
                     <li class="exp-item">
-                        <div class="exp-card"><img class="exp-logo" src="images/lab.jpg" alt="Маркетинг: Проєкт LAB"
-                                width="370" />
+                        <div class="exp-card">
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/mob-port-8-x1.jpg 1x,
+                                ./images/portfolio/mob-port-8-x2.jpg 2x" media="(min-width: 320px)" />
+                                <source srcset="
+                                ./images/portfolio/tab-port-8-x1.jpg 1x,
+                                ./images/portfolio/tab-port-8-x2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/portfolio/desk-port-8-x1.jpg 1x,
+                                ./images/portfolio/desk-port-8-x2.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/portfolio/mob-port-8-x1.jpg" alt="Маркетинг: Проєкт LAB" />
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Repellendus,
@@ -223,11 +320,21 @@
                             <h2 class="exp-name">Проєкт LAB</h2>
                             <p class="exp-type">Маркетинг</p>
                         </div>
-
                     </li>
                     <li class="exp-item">
-                        <div class="exp-card"><img class="exp-logo" src="images/growingbusiness.jpg"
-                                alt="Додаток: Growing Business" width="370" />
+                        <div class="exp-card">
+                            <picture>
+                                <source srcset="
+                                ./images/portfolio/mob-port-9-x1.jpg 1x,
+                                ./images/portfolio/mob-port-9-x2.jpg 2x" media="(min-width: 320px)" />
+                                <source srcset="
+                                ./images/portfolio/tab-port-9-x1.jpg 1x,
+                                ./images/portfolio/tab-port-9-x2.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="
+                                ./images/portfolio/desk-port-9-x1.jpg 1x,
+                                ./images/portfolio/desk-port-9-x2.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/portfolio/mob-port-9-x1.jpg" alt="Додаток: Growing Business" />
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
                                     reiciendis impedit accusamus molestias, dolores expedita magni doloribus perferendis
