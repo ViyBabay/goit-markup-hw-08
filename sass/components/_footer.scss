@@ -13,16 +13,14 @@
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
-        justify-content: center;
+        justify-content: space-around;
     }
 }
 
 .adress {
     margin-bottom: 60px;
     @media screen and(min-width:$tablet){
-        margin-right: 165px;
         margin-bottom: 60px;
-        margin-left: 76px;
         
     }
 }
