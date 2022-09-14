@@ -827,11 +827,13 @@ body {
 @media screen and (min-width: 1200px) {
   .btn-subscribe {
     display: flex;
+    margin-top: 0;
   }
 }
 
 .icon-send {
   display: inline-block;
+  align-items: center;
   margin-left: 12px;
   fill: var(--white-text-color);
 }
