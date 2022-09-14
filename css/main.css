@@ -763,6 +763,11 @@ body {
   color: var(--white-text-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1198.98px) {
+  .join {
+    text-align: left;
+  }
+}
 
 .flinks-list {
   display: flex;

@@ -80,6 +80,9 @@
     text-transform: uppercase;
     color: var(--white-text-color);
     margin-bottom: 20px;
+    @media screen and(min-width: $desktop) {
+        text-align: left;
+    }
 }
 
 .flinks-list {
