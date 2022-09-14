@@ -660,6 +660,13 @@ body {
   fill: var(--main-svg-color);
   border: 1px solid var(--main-svg-color);
   border-radius: 4px;
+  transition-property: fill, border-color;
+  transition-duration: var(--main-trans-duration);
+  transition-timing-function: var(--cubic);
+}
+.clients__item--link:hover, .clients__item--link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 @media screen and (min-width: 767.98px) {
   .clients__item--link {

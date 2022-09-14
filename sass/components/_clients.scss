@@ -32,18 +32,20 @@
     fill: var(--main-svg-color);
     border: 1px solid var(--main-svg-color);
     border-radius: 4px;
+    transition-property: fill, border-color;
+    transition-duration: var(--main-trans-duration);
+    transition-timing-function: var(--cubic);
+    
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+        }
     @media screen and(min-width:$tablet){
         width: 226px;
     }
     @media screen and(min-width:$desktop){
         width: 170px;
         
-    }
-    // transition-property: fill, border-color;
-    // transition-duration: var(--main-trans-duration);
-    // transition-timing-function: var(--cubic);
-    // &:hover, &:focus {
-    //     fill: var(--accent-color);
-    //     border-color: var(--accent-color);
-    //     }
+    }  
 }
