@@ -45,6 +45,16 @@
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 40px;
+    @media screen and (min-width: 767.98px) {
+            .exp-item {
+                width: 354px;
+            }
+        }
+    @media screen and (min-width: 1198.98px) {
+            .exp-item {
+                width: 370px;
+            }
+        }
 }
 
 .exp-name {
@@ -77,14 +87,7 @@
     transition-timing-function: var(--cubic);
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-        cursor: pointer;
-        }
-    @media screen and(min-width: $tablet){
-        width: 354px;
-    }
-    @media screen and(min-width: $desktop){
-        width: 370px; 
-    }
+        cursor: pointer;}
 }
 
 .exp-card {
