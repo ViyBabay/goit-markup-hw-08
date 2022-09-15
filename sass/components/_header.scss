@@ -76,9 +76,6 @@
 .open_menu {
     margin-top: 10px;
     margin-bottom: 10px;
-    // position: absolute;
-    // right: 10px;
-    // top: 10px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -105,10 +102,12 @@
     text-align: left;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    // &:last-child {
-    //     margin-bottom: 50px;
-    // }
+}
 
+.mob-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .mob-nav__link {
@@ -134,7 +133,6 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
     text-decoration: none;
-    // margin-bottom: 32px;
 }
 
 .mob-contacts__item--mail {
@@ -146,7 +144,6 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     text-decoration: none;
-    // margin-bottom: 64px;
 }
 
 .mobile_soc-links {
@@ -162,48 +159,44 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    text-decoration: none;}
-    &::after {
-        content: "";
-        position: absolute;
-        height: 22px;
-        width: 1px;
-        margin-left: 10px;
-        margin-right: 10px;
-        background-color: var(--secondary-text-color);
+    text-decoration: none;
     }
 
-
-
-
+.mobile_soc-link::after {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--secondary-text-color);
+}
 
 .header-desktop {
     @media screen and(max-width: $tablet) {
-        display: none;
-    }
-    @media screen and(min-width: 768px) {
-        display: flex;
-    }
-}
-
-
-.header-desktop {
+            display: none;}
     @media screen and(min-width:$tablet){
         display: flex;
         justify-content: space-between;
         align-items: center;  
     }
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: flex-start;
         width: 1200px;
+    }
+}
+
+.navigation {
+    @media screen and(min-width: $desktop) {
+        margin-left: 93px;
     }
 }
 
 .navigation__list {
     display: flex;
     gap: 50px;
-
 }
-
 
 .navigation__link {
     @media screen and(min-width:$tablet){
@@ -242,6 +235,7 @@
     display: block;
     align-items: center;
     @media screen and(min-width: 1200px) {
+        margin-left: 312px;
         display: flex;
         gap: 30px;
     }

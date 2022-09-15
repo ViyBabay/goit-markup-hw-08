@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     @media screen and(min-width: $tablet){
         justify-content: center;
-        
     }
 }
 
@@ -12,7 +11,7 @@
     margin-right: 8px;
     &:last-child {
         margin-right: 0;
-        }
+    }
 }
 
 .buttons {
@@ -45,7 +44,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
     margin-top: 40px;
 }
 
@@ -75,7 +73,6 @@
 .exp-item {
     display: flex;
     flex-direction: column;
-    
     transition-duration: var(--main-trans-duration);
     transition-timing-function: var(--cubic);
     &:hover {
