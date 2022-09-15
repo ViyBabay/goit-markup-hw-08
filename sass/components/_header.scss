@@ -13,7 +13,7 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     font-size: 24px;
-    line-height: 1.17;}
+    line-height: 1.17;
     &__web {
         color: var(--accent-color);
     }
@@ -22,7 +22,7 @@
     }
     &__white {
         color: var(--white-text-color);
-    }
+    }}
 
 
 
@@ -162,11 +162,7 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    text-decoration: none;
-
-    // &:first-child {
-    //     margin-left: 0px;
-    // }
+    text-decoration: none;}
     &::after {
         content: "";
         position: absolute;
@@ -176,30 +172,17 @@
         margin-right: 10px;
         background-color: var(--secondary-text-color);
     }
-}
-
-
-
-
-
-
-
-
-
 
 
 
 
 
 .header-desktop {
-
     @media screen and(max-width: $tablet) {
         display: none;
     }
-
     @media screen and(min-width: 768px) {
         display: flex;
-
     }
 }
 
@@ -212,7 +195,6 @@
     }
     @media screen and (min-width: $desktop){
         width: 1200px;
-
     }
 }
 
@@ -222,25 +204,6 @@
 
 }
 
-// .navigation {
-//     @media screen and(min-width:$tablet){
-//         display: flex;
-//         align-items: center;
-//     //     &__list {
-//     //             display: flex;
-//     //             }
-//     //         &__list li+li {
-//     //             margin-left: 50px;
-//     // }
-//     // display: flex;
-//     // align-items: center;
-//     // &__list {
-//     //     // display: flex;
-//     //     }
-//     // &__list li+li {
-//     //     margin-left: 50px;
-//     // }
-// }}
 
 .navigation__link {
     @media screen and(min-width:$tablet){
@@ -273,9 +236,7 @@
         background-color: var(--accent-color);
         border-radius: 2px;
         }
-}
-}
-}
+}}}
 
 .contacts {
     display: block;
@@ -286,35 +247,20 @@
     }
 }
 
-
-
-// .navigation__link
-// }
-
-// .contacts {
-//     // display: flex;
-//     // & &__item + &__item {
-//     //         margin-left: 50px;
-//     //     }
-// }
-
-
 .contacts__item--style {
     color: var(--secondary-text-color);
-        text-decoration: none;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        transition-property: color;
-        transition-duration: var(--main-trans-duration);
-        transition-timing-function: var(--cubic);}
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: var(--main-trans-duration);
+    transition-timing-function: var(--cubic);
         &:hover, &:focus {
             color: var(--accent-color);
         }
         & .contacts__item--icon {
             fill: currentColor;
-            margin-right: 10px;
-        }
-    
+            margin-right: 10px;}}
