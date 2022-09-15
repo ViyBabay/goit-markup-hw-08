@@ -232,11 +232,13 @@
 }}}
 
 .contacts {
-    display: block;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     @media screen and(min-width: 1200px) {
         margin-left: 312px;
         display: flex;
+        flex-direction: row;
         gap: 30px;
     }
 }
