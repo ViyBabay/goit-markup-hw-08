@@ -1,14 +1,8 @@
 .team {
     background-color: var(--third-background-color);
-    padding-bottom: 60px;
-    @media screen and(min-width: $desktop) {
-        padding-bottom: 94px;
-        
-    }
 }
 
 .team__title {
-    padding-top: 60px;
     margin-bottom: 30px;
     font-style: normal;
     font-weight: 700;
