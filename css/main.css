@@ -372,6 +372,13 @@ body {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 1198.98px) {
+  .contacts__item--style {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .hero {
   background-color: var(--secondary-background-color);
   max-width: 100%;
